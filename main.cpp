@@ -87,7 +87,7 @@ void turnLeft() {
 
     righthandAndFacing[0][0] = compass[r_index][0];
     righthandAndFacing[0][1] = compass[r_index][1];
-
+        
     righthandAndFacing[1][0] = compass[(r_index+1) % DIRECTIONS][0];
     righthandAndFacing[1][1] = compass[(r_index+1) % DIRECTIONS][1];
     // printf("Turned Left\n");

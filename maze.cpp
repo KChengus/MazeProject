@@ -22,6 +22,9 @@ std::bitset<BITS> WALL_BITS = 0b0000'0000'0000'1111;
 std::bitset<BITS> WALL[DIRECTIONS] = {0b0100, 0b0010, 0b0001, 0b1000}; // S E N W
 std::bitset<BITS> OPPOSITE_WALLS[DIRECTIONS] = {0b0001, 0b1000, 0b0100, 0b0010};
 
+unsigned int generate_randnum(unsigned int limit); 
+void store_maze();
+void display_maze(int current_r, int current_c); 
 // get an adjecent neighbour
 std::vector<int> get_random_cell_neighbour(int row, int col) {
     int adj_row, adj_col;
@@ -156,7 +159,7 @@ void display_maze(int current_r, int current_c) {
 }
 
 
-int main() {
-    maze_main();
-    return 0;
-}
+// int main() {
+//     maze_main();
+//     return 0;
+// }
